@@ -1,9 +1,9 @@
 import random
 
-# function to be used by game_1: Guess the Number
+#Now it picks the middle value to help choose binary search method which is more optimal
 def pick_value(poss_values):
-    x = random.choice(poss_values)   
-    return x
+    mid_val = len(poss_values)//2
+    return poss_values[mid_val]
 
 # function to be used in game_2: Higher or Lower
 def check_higher_lower(current_val, next_val, user_input):
